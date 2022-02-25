@@ -721,3 +721,115 @@ footer{
 .footer-site-link a:hover{
     text-decoration: underline;
 }
+* Media query for desktop and tab  */
+@media only screen and (min-width: 768px){
+    .header{
+        width: 532px;
+        height: 56px;
+        border: 1px solid;
+    }
+    .header-container{
+        width: 760px;
+        height: 54px;
+        border: 1px solid;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .main-navbar-left{
+        display: none;
+    }
+    .main-navbar-right {
+        border: 1px solid blue;
+        height: 32px;
+    }
+    .serach {
+        display: none;
+    }
+    .l-btn {
+        border: none;
+        font-size: 12px;
+        padding: 0 15px;
+        cursor: pointer;
+    }
+    .s-btn {
+        border: none;
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .main-banner {
+        border: #65735B 1px solid;
+        height: 447px;
+        width: 532px;
+        display: flex;
+        padding: 40px 0;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .banner-text p {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    .t-btn , .w-btn{
+        padding: 5px 15px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    .col-1 , .col-2{
+        width: 50%;
+        padding: 10px;
+    }
+    .logos img {
+        height: 23px;
+        width: 40px;
+    }
+    .hero-container {
+        width: 532px;
+        height: 539px;
+        overflow: hidden;
+        position: absolute;
+        background-size: cover;
+    }
+    .hero-banner-text p {
+        font-size: 15px;
+        margin-bottom: 40px;
+        color: #ffffff;
+    }
+    .hero-banner-text h2 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .hero-para p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-row {
+        /* border: 1px solid crimson; */
+        display: flex;
+        flex-direction: row;
+        width: 490px;
+        /* height: 250px; */
+    }
+    .hero-box {
+        width: 150px;
+        height: 159px;
+        padding: 10px;
+    }
+    .hero-box p {
+        font-size: 20px;
+        margin-bottom: 10px;
+        /* font-weight: 500; */
+    }
+    .upwork-container {
+        border: 1px solid rebeccapurple;
+        width: 533px;
+        /* margin: auto; */
+        padding: 30px 15px;
+}
