@@ -7,20 +7,28 @@
 .header{
    border-bottom: 1px solid #d4d7d4;
    height: 69px;
+   width: 100%;
    display: flex;
    flex-wrap: wrap;
 }
 .header-container{
-    width: 1140px;
+    width: 100%;
     margin: 0 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     color: #65735B;
     flex-wrap: wrap;
 }
 .logo img{
     width: 130px;
+    display: flex;
+    flex-basis: 10%;
+}
+.main-navbar-left {
+    display: flex;
+    flex-basis: 40%;
+    align-items: center;
+    height: 64px;
 }
 .main-navbar-left ul{
     display: flex;
@@ -43,6 +51,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-basis: 45%;
     height: 64px;
 }
 .serach{
@@ -719,117 +728,272 @@ footer{
     color: #ffffff;
 }
 .footer-site-link a:hover{
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
-* Media query for desktop and tab  */
-@media only screen and (min-width: 768px){
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
     .header{
-        width: 532px;
-        height: 56px;
-        border: 1px solid;
-    }
-    .header-container{
-        width: 760px;
-        height: 54px;
-        border: 1px solid;
-        margin: 0 20px;
-        display: flex;
-        align-items: center;
-    }
-    .logo img {
-        width: 100px;
+        width: 108%;
     }
     .main-navbar-left{
         display: none;
     }
     .main-navbar-right {
-        border: 1px solid blue;
-        height: 32px;
+        display: flex;
+        justify-content: flex-end;
+        flex: 2%;
     }
     .serach {
         display: none;
     }
     .l-btn {
         border: none;
-        font-size: 12px;
-        padding: 0 15px;
+        font-size: 14px;
+        padding: 7px 15px;
         cursor: pointer;
     }
     .s-btn {
         border: none;
-        padding: 5px 15px;
-        font-size: 12px;
+        padding: 7px 15px;
+        font-size: 14px;
     }
     .nav-menu {
         display: none;
     }
     .main-banner {
-        border: #65735B 1px solid;
-        height: 447px;
-        width: 532px;
-        display: flex;
-        padding: 40px 0;
+        width: 99%;
     }
     .banner-text h1 {
         font-size: 40px;
-    }
-    .banner-text p {
-        font-size: 13px;
-        margin-bottom: 30px;
     }
     .t-btn , .w-btn{
         padding: 5px 15px;
         margin-right: 10px;
         font-size: 12px;
     }
-    .col-1 , .col-2{
-        width: 50%;
-        padding: 10px;
-    }
     .logos img {
-        height: 23px;
-        width: 40px;
+        width: 55px;
     }
     .hero-container {
-        width: 532px;
-        height: 539px;
-        overflow: hidden;
-        position: absolute;
-        background-size: cover;
+        width: 99%;
     }
     .hero-banner-text p {
         font-size: 15px;
-        margin-bottom: 40px;
-        color: #ffffff;
     }
     .hero-banner-text h2 {
         font-size: 45px;
-        margin-bottom: 15px;
     }
     .hero-para p {
         font-size: 16px;
-        margin-bottom: 30px;
     }
     .hero-row {
-        /* border: 1px solid crimson; */
         display: flex;
         flex-direction: row;
-        width: 490px;
-        /* height: 250px; */
+        justify-content: flex-start;
+        width: 101%;
+        height: 260px;
     }
     .hero-box {
-        width: 150px;
-        height: 159px;
-        padding: 10px;
+        display: flex;
+        width: 80%;
+        height: 30%;
+        flex-direction: column;
     }
     .hero-box p {
-        font-size: 20px;
-        margin-bottom: 10px;
-        /* font-weight: 500; */
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
     }
     .upwork-container {
-        border: 1px solid rebeccapurple;
-        width: 533px;
-        /* margin: auto; */
-        padding: 30px 15px;
+        width: 99%;
+        display: flex;
+    }
+    .upwork-text h2 {
+        font-size: 42px;
+    }
+    .update-col h2 {
+        font-size: 24px;
+    }
+    .update-col p {
+        font-size: 12px;
+    }
+    .upwork-ratting {
+        display: none;
+    }
+    .upwork-box-1 {
+        background-color: transparent;
+    }
+    .person {
+        transform: translate(-495px,-50px);
+    }
+    .brand-container {
+        width: 99%;
+    }
+    .brand-box-text h2 {
+        font-size: 42px;
+    }
+    .brand-box-keywords span {
+        display: block;
+        font-size: 24px;
+    }
+    .brand-box-img img {
+        width: 132%;
+    }
+    .ser-btn {
+        padding: 5px 5px;
+    }
+    .ex-content-container {
+        width: 99%;
+    }
+    .ex-content-box-1 {
+        display: none;
+    }
+    .ex-content-box-2 {
+        width: 100%;
+    }
+    .categories-container {
+        width: 99%;
+    }
+    .cate-main-heading h2 {
+        font-size: 42px;
+    }
+    .cate-card1{
+        width: 100%;
+        padding: 20px;
+    }
+    .cate-card2{
+        display: none;
+    }
+    .skill-text h2 {
+        font-size: 30px;
+    }
+    .skill-col a {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .about-sec-col-list a {
+        font-size: 10px;
+    }
+    .footer-social-heading {
+        width: 15%;
+    }
+    .footer-social-box-1 {
+        width: 40%;
+    }
+    .footer-social-box-2 {
+        width: 43%;
+    }
+    .footer-site-info {
+        padding: 10px 0 20px 0;
+    }
+    .footer-site-info p {
+        margin: 0 30px 10px 0;
+    }
+    .footer-site-link a {
+        margin: 0 10px 0 0;
+    }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (max-width: 600px) { 
+    .col-2 {
+        width: 40%;
+        display: inline-block;
+        height: 50%;
+    }
+    .banner-logo {
+        height: 149px;
+        width: 150%;
+    }
+    .logos img {
+        width: 65px;
+    }
+    .hero-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 101%;
+        height: 260px;
+    }
+    .hero-box {
+        display: flex;
+        width: 80%;
+        height: 30%;
+        flex-direction: column;
+    }
+    .hero-box p {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .upwork-container{
+        padding: 30px 10px;
+    }
+    .upwork-update {
+        width: 310px;
+        height: 360px;
+        padding: 10px;
+    }
+    .upwork-box-1 {
+        background-color: transparent;
+    }
+    .person {
+        transform: translate(-596px,-57px);
+        width: 89%;
+    }
+    .upwork-award-text {
+        display: none;
+    }
+    .brand-container {
+        width: 100%;
+        padding: 10px;
+        height: 420px;
+    }
+    .brand-box {
+        width: 50%;
+        padding: 0 10px;
+    }
+    .brand-box-text h2 {
+        font-size: 30px;
+    }
+    .brand-box-keywords span {
+        font-size: 20px;
+    }
+    .brand-box-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .service-btn {
+        width: 260px;
+        height: 220px;
+    }
+    .ser-btn {
+        font-size: 9px;
+    }
+    .ex-content-box-2 {
+        width: 100%;
+        height: 660px;
+    }
+    .ex-content-text {
+        width: 525px;
+        height: 378px;
+        margin-bottom: 20px;
+    }
+    .categories-section {
+        margin-top: 50px;
+    }
+
+    .skill-sec {
+        padding: 50px 0;
+        height: 150%;
+    }
+    .skill-text h2 {
+        font-size: 24px;
+    }
+    .skill-col a {
+        font-size: 15px;
+    }
+    .footer-social-box-1 img {
+        width: 19px;
+        margin: 0 5px;
+    }
+} 
